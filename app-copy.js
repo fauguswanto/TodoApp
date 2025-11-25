@@ -5,7 +5,7 @@ const todoListUl = document.querySelector("#todo-list");
 let allTodos = [];
 updateTodoListUI();
 
-todoForm.addEventListener("submit", function(e){
+todoForm.addEventListener("submit", function (e) {
     e.preventDefault();
     addTodo();
 })
@@ -27,7 +27,7 @@ function updateTodoListUI() {
     })
 }
 
-function createTodoItem (todoText) {
+function createTodoItem(todoText) {
     const todoLi = document.createElement("li");
     todoLi.innerText = todoText;
     return todoLi;
